@@ -21,7 +21,7 @@ if (app.get('env') === 'production') {
   // Serve favicon
   app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
-  // In production mode run application from public folder
+  // In production mode serve static files from 'public' dir
   app.use(express.static(path.join(__dirname, 'public')));
 
   // Catch all other routes and return the index file
