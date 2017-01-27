@@ -1,0 +1,9 @@
+{
+  "name": "Express.js + Angular + TypeScript Example",
+  "repository": "https://github.com/ahmed-taj/express-angular-typescript-starter",
+  "keywords": [
+    "angular2",
+    "express",
+    "node"
+  ]
+}
