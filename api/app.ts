@@ -28,6 +28,10 @@ if (app.get('env') === 'production') {
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
   });
+
+} else {
+  // Enable CORS in development
+  app.use(require('cors'));
 }
 
 // Catch 404 and forward to error handler
@@ -45,5 +49,5 @@ app.use(function (err: any, req: express.Request, res: express.Response, next: e
   });
 });
 
-console.log('Running on ' + app.get('env') + ' mode');
+console.log('Running in ' + app.get('env') + ' mode');
 export { app }
